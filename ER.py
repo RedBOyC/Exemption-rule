@@ -4,7 +4,7 @@ def ER(a, b, m):
   #ensure a and b are coprime
   smallest=min(a, b)
   divisor=[]
-  for d in range(a+1):
+  for d in range(1, a+1):
     if a%d==0 and b%d==0:
       divisor.append(d)
   if len(divisor)>1:
