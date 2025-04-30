@@ -25,3 +25,10 @@ def ER(a, b, m):
         else:
           break
   return A, B, primes
+
+#Tested on Google Colab:
+
+%%timeit
+A, B, primes=ER(2, 3, 1000)
+
+#11.5 ms ± 2.68 ms per loop (mean ± std. dev. of 7 runs, 100 loops each)
