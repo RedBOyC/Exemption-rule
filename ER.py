@@ -24,6 +24,17 @@ def ER(a, b, m):
           B.append(exempted)
         else:
           break
+  for n in range(1, m+1):
+    if n not in B:
+        p=abs(a*(-1*n) + b)
+        A.append(-1*n)
+        primes.append(p)
+        for k in range(m+1):
+            exempted=(p*k) + ((-1*p -b)//a)   
+            if exempted<=m:
+                B.append(exempted)
+            else:
+                break
   return A, B, primes
 
 #Tested on Google Colab:
