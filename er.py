@@ -78,5 +78,5 @@ def evaluate_ER(a, b, m):
         'Precision': precision, 'Recall': recall, 'F1': f1
     }
 
-result = evaluate_ER(2, 3, 10000)
+result = evaluate_ER(a, b, m)   ##replace a,b,m suitable values
 print(result)
